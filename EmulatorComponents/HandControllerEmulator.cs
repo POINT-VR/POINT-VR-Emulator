@@ -296,7 +296,7 @@ public class HandControllerEmulator : MonoBehaviour
             UICollider activeUICollider = hit.collider.gameObject.GetComponent<UICollider>();
             if (activeUICollider != null) //Collider is a UICollider: invokes assigned event
             {
-                activeUICollider.OnCast.Invoke();
+                activeUICollider.OnCast();
             }
             CheckSlider(hit);
             CheckScrollbar(hit);
